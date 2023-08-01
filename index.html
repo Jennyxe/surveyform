@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1 id="title"> Survey Form</h1>
+    <p id="description">CodeCamp Survey Form</p>
+
+    <form id="survey-form">
+      <label id="name-label">Name <input type="text" id="name" name="name" placeholder="Enter your name" required></label>
+      <label id="email-label">Email <input type="email" id="email" name="emial" placeholder="Enter your email" required></label>
+      <label id="number-label">Age <input type="number" name="age" id="number" min="13" max="75" placeholder="Age" required></label>
+      <label for="dropdown">Which option best describes your current role? 
+      <select id="dropdown">
+        <option>Select current role</option>
+         <option value="1">Student</option>
+          <option value="2">Full Time job</option>
+           <option value="3">Full Time Learner</option>
+      </select>
+      </label>
+      
+      <label>Would you recommend freeCodeCamp to a friend?</label>
+      <label ><input type="radio" name="recommend" value="definitely" class="inline">Definitely</label>
+      <label><input type="radio" name="recommend" value="maybe" class="inline">Maybe</label>
+
+      <label><input type="radio" name="recommend" value="not sure" class="inline">Not Sure</label>
+
+      <label>What would you like to see improved? (Check all that apply)</label>
+      <label for="Front-end Projects"><input type="checkbox" name="Front-end Projects" value="Front-end Projects" class="inline">Front-end Projects</label>
+       <label for="Back-end Projects"><input type="checkbox" name="Back-end Projects" value="Back-end Projects" class="inline">Back-end Projects</label>
+        <label for="Challenges Projects"><input type="checkbox" name="Challenges Projects" value="Challenges Projects" class="inline">Challenges Projects</label>
+      <label for="bio">Any comments or suggestions?<textarea id="bio" name="bio" cols="30" rows="6" placeholder="Enter your comment here..."></textarea></label>
+
+      <input type="submit" value="Submit" id="submit">
+
+    </form>
+  </body>
+</html>
